@@ -33,6 +33,8 @@ def download_paper(year, save_dir, is_download_supplement=False,
     :return: True
     """
     CORL_year_dict = {
+        2025: 305,
+        2024: 270,
         2023: 229,
         2022: 205,
         2021: 164,
@@ -80,13 +82,13 @@ def download_paper(year, save_dir, is_download_supplement=False,
 
 
 if __name__ == '__main__':
-    for year in range(2024, 2025):
-        download_paper(
-            year,
-            rf'E:\CORL\CORL_{year}',
-            is_download_supplement=False,
-            time_step_in_seconds=30,
-            downloader='IDM'
-            # downloader = None
-        )
+    year=2025
+    download_paper(
+        year,
+        rf'D:\CORL\CORL_{year}',
+        is_download_supplement=False,
+        time_step_in_seconds=30,
+        downloader='IDM'
+        # downloader = None
+    )
     pass
