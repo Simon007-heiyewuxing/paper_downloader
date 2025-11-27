@@ -246,7 +246,8 @@ def download_nips_papers_given_url(
         os.makedirs(group_save_dir, exist_ok=True)
         number_paper_group = 0
         accept_group_link = ag.find_element(By.TAG_NAME, "a")
-        group_id = accept_group_link.get_attribute('aria-controls')
+        # group_id = accept_group_link.get_attribute('aria-controls')
+        group_id = accept_group_link.get_attribute('href').split('#')[-1]
         # scroll to top of page, if not at top, the click action not work
         # https://stackoverflow.com/questions/45576958/scrolling-to-top-of-the-page-in-python-using-selenium
         driver.find_element(By.TAG_NAME, 'body').send_keys(
