@@ -77,6 +77,9 @@ The number of papers that could be downloaded using this repo (also provide **Al
 [Download from 123pan.com](https://www.123pan.com/s/PwXljv-QErwd.html)
 (ACCESS CODE: `FdX2`)
 
+如果需要对应的 markdown 文件，请看[这里](MARKDOWN_SHARING.md)（需要捐赠）。
+
+
  (May miss some papers due to the (older version of) 123pan's limitation on the length of filename)
 
 NOTE: all the shared papers' pdf files are collected from network, and the original authors/providers hold the copyrights.
