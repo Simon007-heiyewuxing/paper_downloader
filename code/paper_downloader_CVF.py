@@ -206,7 +206,7 @@ def download_from_csv(
     project_root_folder = os.path.abspath(
         os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
     postfix = f'{conference}_{year}'
-    csv_filename = f'{conference}{'_WS' if is_workshops else ""}_{year}'\
+    csv_filename = f'''{conference}{'_WS' if is_workshops else ""}_{year}'''\
         f'{"_findings" if is_findings else ""}.csv'
     if is_workshops:
         postfix = f'{conference}_WS_{year}'
